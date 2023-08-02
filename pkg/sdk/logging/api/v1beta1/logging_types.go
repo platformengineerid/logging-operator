@@ -556,7 +556,7 @@ func FluentBitDefaults(fluentbitSpec *FluentbitSpec) error {
 				fluentbitSpec.Annotations["prometheus.io/path"] = fluentbitSpec.Metrics.Path
 				fluentbitSpec.Annotations["prometheus.io/port"] = fmt.Sprintf("%d", fluentbitSpec.Metrics.Port)
 			}
-		} else if fluentbitSpec.LivenessDefaultCheck {
+		} else if fluentbitSpec.LivenessDefaultCheck || fluentbitSpec.ConfigHotReload != nil {
 			fluentbitSpec.Metrics = &Metrics{
 				Port: 2020,
 				Path: "/",

@@ -262,6 +262,10 @@ Default: -
 
 Default: -
 
+### configHotReload (*HotReload, optional) {#fluentbitspec-confighotreload}
+
+Default: -
+
 ### customParsers (string, optional) {#fluentbitspec-customparsers}
 
 Specify a custom parser file to load in addition to the default parsers file. It must be a valid key in the configmap specified by customConfig 
@@ -427,6 +431,19 @@ Default: 5
 The time period by second to count the error and retry failure data point
 
 Default: 60
+
+
+## HotReload
+
+HotReload configuration
+
+### resources (corev1.ResourceRequirements, optional) {#hotreload-resources}
+
+Default: -
+
+### image (ImageSpec, optional) {#hotreload-image}
+
+Default: -
 
 
 ## InputTail
