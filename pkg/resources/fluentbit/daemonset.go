@@ -164,7 +164,7 @@ func newConfigMapReloader(spec *v1beta1.FluentbitSpec) corev1.Container {
 	}
 
 	args = append(args,
-		"--volume-dir=/fluentbit/config",
+		fmt.Sprintf("--volume-dir=%s", OperatorConfigPath),
 		fmt.Sprintf("--webhook-url=http://127.0.0.1:%d/api/v2/reload", spec.Metrics.Port),
 	)
 
