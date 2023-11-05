@@ -91,7 +91,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
 <filter **>
   @type enhance_k8s_metadata
   @id test_enhanceK8s

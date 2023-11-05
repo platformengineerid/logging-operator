@@ -66,7 +66,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
  <filter **>
  @type kube_events_timestamp
  @id test-kube-events-timestamp

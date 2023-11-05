@@ -76,7 +76,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
 <filter **>
   @type geoip
   @id test_geoip

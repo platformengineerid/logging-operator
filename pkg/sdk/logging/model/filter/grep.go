@@ -78,7 +78,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
   <filter **>
     @type grep
     @id demo-flow_1_grep
@@ -122,7 +122,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
   <filter **>
     @type grep
     @id demo-flow_0_grep
@@ -170,7 +170,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
     <or>
       <exclude>
         key first
@@ -220,7 +220,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
     <and>
       <regexp>
         key first

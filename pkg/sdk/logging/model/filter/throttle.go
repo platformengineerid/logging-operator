@@ -70,7 +70,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
 <filter **>
   @type throttle
   @id test_throttle

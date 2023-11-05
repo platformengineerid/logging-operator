@@ -99,7 +99,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
 <filter **>
   @type concat
   @id test_concat

@@ -225,7 +225,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
 <filter **>
   @type parser
   @id test_parser

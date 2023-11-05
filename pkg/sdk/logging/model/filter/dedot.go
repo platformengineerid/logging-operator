@@ -62,7 +62,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
 <filter **>
   @type dedot
   @id test_dedot

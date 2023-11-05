@@ -89,7 +89,7 @@ spec:
 
 Fluentd config result:
 
-```yaml
+```xml
 <match kubernetes.**>
   @type detect_exceptions
   @id test_detect_exceptions
